@@ -8,12 +8,11 @@
     
     <script>
         // --- TUTAJ USTAWIASZ HASŁO ---
-        //const poprawneHaslo = "theweeknd"; 
-	const psswd;
+        const poprawneHaslo = "dGhld2Vla25k"; 
         
         let podaneHaslo = prompt("Dostęp ściśle zastrzeżony. Do przedstawionej twórczości należy podejść na luuuuzie ;D. W przypadku marudzenia strona ulegnie autodestrukcji. Podaj tajne hasło:");
         
-        if (podaneHaslo === null || podaneHaslo.toLowerCase() !== psswd) {
+        if (podaneHaslo === null || podaneHaslo.toLowerCase() !== poprawneHaslo) {
             document.documentElement.innerHTML = "<body style='background-color:#000; color:#ff0033; display:flex; justify-content:center; align-items:center; height:100vh; font-family:Courier, monospace; margin:0;'><h1>[ BŁĄD AUTORYZACJI. DOSTĘP ODRZUCONY. ]</h1></body>";
             window.stop();
         }
